@@ -9,8 +9,8 @@ class InvalidAgeException extends Exception {
 public class LibrarySystem {
 
     public void checkAge(int age) throws InvalidAgeException {
-        if (age < 18) {
-            throw new InvalidAgeException("Age must be at least 18 years old to borrow books");
+        if (age < 12) {
+            throw new InvalidAgeException("Age must be at least 12 years old to borrow books");
         } else {
             System.out.println("Age is valid for borrowing");
         }
