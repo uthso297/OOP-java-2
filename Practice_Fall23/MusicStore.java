@@ -20,7 +20,12 @@ class Instruments {
 
 class Guiter extends Instruments {
     public Guiter() {
-        System.out.println("Ukulele is the smallest form of Guiter");
+
+    }
+
+    public Guiter(String form) {
+        System.out.println(form + " is the smallest form of Guiter");
+
     }
 
     @Override
@@ -50,7 +55,7 @@ public class MusicStore {
         instrumental.play();
         instrumental.tune();
 
-        Guiter ukulele = new Guiter();
+        Guiter ukulele = new Guiter("Ukulele");
         ukulele.play();
         ukulele.tune("Drop D");
 
