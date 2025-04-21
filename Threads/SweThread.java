@@ -36,7 +36,7 @@ public class SweThread {
 
         agent1.start();
         try {
-            agent1.join();
+            // agent1.join();
             Thread.sleep(2000);
 
         } catch (Exception e) {
@@ -46,7 +46,7 @@ public class SweThread {
         agent2.start();
 
         try {
-            agent2.join();
+            // agent2.join();
             Thread.sleep(2000);
 
         } catch (Exception e) {
@@ -55,8 +55,34 @@ public class SweThread {
         }
         
         agent3.start();
+
+        try {
+            // agent3.join();
+            Thread.sleep(2000);
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println(e);
+        }
         agent4.start();
+        try {
+            // agent4.join();
+            Thread.sleep(2000);
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println(e);
+        }
         agent5.start();
+
+        try {
+            // agent5.join();
+            Thread.sleep(2000);
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println(e);
+        }
 
 
     }
