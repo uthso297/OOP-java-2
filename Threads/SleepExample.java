@@ -6,7 +6,7 @@ class SleepExample extends Thread {
             System.out.println("Count: " + i);
             // we have to do either throws InterruptedException or try catch to call sleep
             try {
-                Thread.sleep(3000); // sleep for 1 second
+                Thread.sleep(3000); // sleep for 3 second
             } catch (InterruptedException e) {
                 System.out.println("Thread interrupted during sleep");
             }
