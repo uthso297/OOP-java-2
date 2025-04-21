@@ -27,7 +27,7 @@ class JoinExample extends Thread {
         t.print();
         t.start();
         try {
-            t.join();  // it means Wait for t1 to finish
+            t.join();  // it means Wait for t to finish
             // main thread waits for t to finish
             // Thread.sleep(3000);
         } catch (InterruptedException e) {

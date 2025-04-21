@@ -14,12 +14,6 @@ class Agents extends Thread{
     public void run(){
         System.out.println(getname() + " is processing ticket");
 
-        try {
-            Thread.sleep(2000);
-        } catch (Exception e) {
-            // TODO: handle exception
-            System.out.println(e);
-        }
     }
 }
 
@@ -28,18 +22,42 @@ public class SweThread {
     public static void main(String[] args) {
         Agents agent1 = new Agents();
         Agents agent2 = new Agents();
+        Agents agent3 = new Agents();
+        Agents agent4 = new Agents();
+        Agents agent5 = new Agents();
 
         agent1.setAgentName("Rafin");
         agent2.setAgentName("Rafinnmnn");
+        agent3.setAgentName("Ra");
+        agent4.setAgentName("Rafi");
+        agent5.setAgentName("R");
+
+
 
         agent1.start();
         try {
             agent1.join();
+            Thread.sleep(2000);
+
         } catch (Exception e) {
             // TODO: handle exception
             System.out.println(e);
         }
         agent2.start();
+
+        try {
+            agent2.join();
+            Thread.sleep(2000);
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println(e);
+        }
+        
+        agent3.start();
+        agent4.start();
+        agent5.start();
+
 
     }
 }

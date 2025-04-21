@@ -33,6 +33,7 @@ class Employee extends Person {
     // Using super(parameter) to call the parameterized constructor of Person
     public Employee(String name, int salary) {
         super(name);
+        // super(); //by default if super(name) do not provided
         this.salary = salary;
     }
 
