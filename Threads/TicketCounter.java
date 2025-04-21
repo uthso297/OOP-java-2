@@ -18,7 +18,7 @@ class Agents extends Thread{
 }
 
 
-public class SweThread {
+public class TicketCounter {
     public static void main(String[] args) {
         Agents agent1 = new Agents();
         Agents agent2 = new Agents();
