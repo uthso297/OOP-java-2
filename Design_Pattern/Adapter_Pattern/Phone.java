@@ -2,6 +2,8 @@ package Design_Pattern.Adapter_Pattern;
 
 /*
 
+The Adapter Pattern lets two incompatible classes work together by creating a bridge (adapter) between them. It’s like a translator that helps two people speaking different languages understand each other.
+
 Let’s say you have a phone that uses a USB-C port, but your charger is a Lightning cable (like Apple's). These are incompatible, but you can make them work using an adapter.
 
 Goal:

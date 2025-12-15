@@ -6,13 +6,9 @@ package Association.Unidirectional;
  * 
  * 
 Association represents a "has-a" or "uses-a" relationship.
-
 It shows that one class uses or is connected to another.
-
 It's bidirectional by default but can be unidirectional.
-
 Can have multiplicity (one-to-one, one-to-many, etc.).
-
 It doesn't imply ownership (unlike Aggregation or Composition).
  * 
  * 

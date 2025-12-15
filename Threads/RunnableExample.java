@@ -13,6 +13,11 @@ public class RunnableExample {
         MyRunnable task = new MyRunnable();
         Thread t = new Thread(task);
         t.start();
+        try {
+            t.join();
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
 
         System.out.println("Main thread: " + Thread.currentThread().getName());
     }
