@@ -29,9 +29,9 @@ class ShippingTask implements OrderTask {
 
     @Override
     public void execute(String productId, double price, int quantity) {
-        System.err.println("-> Shipping product: " + productId);
-        System.err.println("-> Shipping price: " + price);
-        System.err.println("-> Shipping quantity: " + quantity);
+        System.out.println("-> Shipping product: " + productId);
+        System.out.println("-> Shipping price: " + price);
+        System.out.println("-> Shipping quantity: " + quantity);
 
     }
 }
